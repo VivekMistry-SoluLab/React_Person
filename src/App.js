@@ -4,23 +4,21 @@ import Person from './Person/Person';
 
 class App extends Component {
   state = {
-    persons: [
-      { name: 'Max', age: 28 },
-      { name: 'Manu', age: 29 },
-      { name: 'Stephanie', age: 26 }
+    persons : [
+      {name : "Vivek", age: 21},
+      {name : "Neel", age: 24},
+      {name : "Ayush", age: 25}
     ],
     otherState: 'some other value',
     showPersons: false
   }
 
   switchNameHandler = ( newName ) => {
-    // console.log('Was clicked!');
-    // DON'T DO THIS: this.state.persons[0].name = 'Maximilian';
     this.setState( {
-      persons: [
-        { name: newName, age: 28 },
-        { name: 'Manu', age: 29 },
-        { name: 'Stephanie', age: 27 }
+      persons : [
+        {name : "Megh", age: 22},
+        {name : "Hemil", age: 23},
+        {name : "Meet", age: 20}
       ]
     } )
   }
@@ -28,9 +26,9 @@ class App extends Component {
   nameChangedHandler = ( event ) => {
     this.setState( {
       persons: [
-        { name: 'Max', age: 28 },
-        { name: event.target.value, age: 29 },
-        { name: 'Stephanie', age: 26 }
+        { name: "Vivek", age: 21 },
+        { name: event.target.value, age: 24 },
+        { name: "Ayush", age: 25 }
       ]
     } )
   }
